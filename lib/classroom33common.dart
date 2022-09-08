@@ -3,6 +3,7 @@ library classroom33common;
 // Extenstion
 export 'extension/correct_answer.dart';
 export 'extension/position_color.dart';
+export 'extension/ride_color.dart';
 // Provider
 export 'provider/big_question_storage.dart';
 export 'provider/on_question_timer.dart';
