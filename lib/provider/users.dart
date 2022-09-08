@@ -52,3 +52,19 @@ final topUsersFutureProvider = FutureProvider<List<UserModel>>((ref) async {
       .where((e) => e.totalPoint != null)
       .toList();
 });
+
+/// 全ての得点を取得
+final totalPointsFutureProvider = FutureProvider<List<int>>((ref) async {
+  final res = await Supabase.instance.client
+      .from('users')
+      .select('total_point')
+      .order('total_point')
+      .execute();
+  if (res.error != null) {
+    throw res.error!;
+  }
+  return (res.data! as List)
+      .where((dynamic e) => e['total_point'] != null)
+      .map((dynamic e) => e['total_point'] as int)
+      .toList();
+});
