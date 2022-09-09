@@ -68,7 +68,7 @@ class QuestionsResult {
         'items': items.map((e) => e.toJson()).toList(),
       };
 
-  /// 0~12個の配列
+  /// 0~8個の配列
   final List<QuestionResult> items;
 }
 
@@ -87,6 +87,8 @@ class QuestionResult {
         'correct_count': correctCount,
         'wrong_count': wrongCount,
       };
+
+  int get toPoint => correctCount * 8 + wrongCount * 1;
 
   /// 正答数
   final int correctCount;
