@@ -17,15 +17,11 @@ dependencies:
 
 dev_dependencies:
   build_runner: ^2.2.0
-  pedantic_mono: ^1.19.2
-  flutter_lints: ^2.0.0
-  flutter_test:
-    sdk: flutter
   freezed: ^2.1.0+1
   json_serializable: ^6.3.1
+  pedantic_mono: ^1.19.2
 
 flutter: null
-
 # To add assets to your package, add an assets section, like this:
 # assets:
 #   - images/a_dot_burr.jpeg

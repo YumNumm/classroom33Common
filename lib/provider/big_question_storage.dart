@@ -1,7 +1,7 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import './../schema/question/big_question_item.dart';
-import './../schema/question/question_category.dart';
+import '../schema/question/big_question_item.dart';
+import '../schema/question/question_category.dart';
 import '../schema/question/small_question_item.dart';
 
 class BigQuestionSet {
@@ -953,7 +953,7 @@ final questions = <BigQuestionSet>[
         questions: [
           SmallQuestionItem(
             id: 67,
-            questionStatement: r'波の速さvと振動数f,波長lambdaの関係は?',
+            questionStatement: r'波の速さvと振動数f,波長\lambdaの関係は?',
             choices: [
               r'v = f\lambda',
               r'\lambda = fv',
