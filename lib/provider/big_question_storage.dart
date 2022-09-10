@@ -1,7 +1,7 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../schema/question/big_question_item.dart';
-import '../schema/question/question_category.dart';
+import './../schema/question/big_question_item.dart';
+import './../schema/question/question_category.dart';
 import '../schema/question/small_question_item.dart';
 
 class BigQuestionSet {
@@ -62,7 +62,7 @@ final questions = <BigQuestionSet>[
           ),
           SmallQuestionItem(
             id: 22,
-            questionStatement: r'レンズを通して見える虚像の説明として正しくないのはどれか?',
+            questionStatement: r'凸レンズを通して見える虚像の説明として正しくないのはどれか?',
             choices: [r'物体が焦点より内側', r'向きが物体と同じ', r'実物より大きい', r'スクリーンにうつる'],
             correctAnswerIndex: 4,
           ),
@@ -81,13 +81,13 @@ final questions = <BigQuestionSet>[
           SmallQuestionItem(
             id: 8,
             questionStatement: r'空気の量が適切な炎の色はどれか?',
-            choices: [r'うすい赤', r'黄色', r'うすい青色', r'無色'],
+            choices: [r'うすい赤色 ', r'黄色', r'うすい青色', r'無色'],
             correctAnswerIndex: 3,
           ),
           SmallQuestionItem(
             id: 14,
             questionStatement: r'金属の共通の性質として正しくないのはどれか?',
-            choices: [r'磁石につく', r'磨くと金属光沢が出る', r'展性と延性がある', r'電気を通し熱を伝える'],
+            choices: [r'磁石につく', r'磨くと金属光沢が出る', r'展性と延性がある', r'電気を良く通し熱を伝えやすい'],
             correctAnswerIndex: 1,
           ),
           SmallQuestionItem(
@@ -165,7 +165,7 @@ final questions = <BigQuestionSet>[
           ),
           SmallQuestionItem(
             id: 159,
-            questionStatement: r'参議院選は、1年になんっ会行われるか?',
+            questionStatement: r'参議院選は、何年に一回行われるか?',
             choices: [r'2年', r'3年', r'4年', r'6年'],
             correctAnswerIndex: 2,
           ),
@@ -293,8 +293,8 @@ final questions = <BigQuestionSet>[
         questions: [
           SmallQuestionItem(
             id: 141,
-            questionStatement: r'今年4月から成人が18になったが、できるようになったことは?',
-            choices: [r'車の運転', r'国民年金', r'国家資格の取得', r'5年パスポートの取得'],
+            questionStatement: r'今年4月から成人が18になったが、新しくできるようになったことは?',
+            choices: [r'車の運転', r'国民年金', r'公認会計士の資格の取得', r'5年パスポートの取得'],
             correctAnswerIndex: 3,
           ),
           SmallQuestionItem(
@@ -548,7 +548,7 @@ final questions = <BigQuestionSet>[
           SmallQuestionItem(
             id: 121,
             questionStatement: r'ベイスターズの親会社、DeNAのゲームは次のうちどれ?',
-            choices: [r'原神', r'ウマ娘', r'ファミコン', r'エイペックス'],
+            choices: [r'原神', r'逆転オセロニア', r'ファミコン', r'エイペックス'],
             correctAnswerIndex: 2,
           ),
         ],
@@ -598,13 +598,13 @@ final questions = <BigQuestionSet>[
             id: 115,
             questionStatement: r'焼き鳥のハツとはどこの部分?',
             choices: [r'心臓', r'肺', r'舌', r'脳'],
-            correctAnswerIndex: 4,
+            correctAnswerIndex: 1,
           ),
           SmallQuestionItem(
             id: 117,
             questionStatement: r'縄跳びの技で実際にあるのは?',
             choices: [r'はやぶさ', r'飛行機', r'フライングダイナソー', r'ペガサス'],
-            correctAnswerIndex: 4,
+            correctAnswerIndex: 1,
           ),
         ],
       ),
@@ -794,7 +794,7 @@ final questions = <BigQuestionSet>[
           SmallQuestionItem(
             id: 42,
             questionStatement: r'y=a^xとy=\log_a x は何に関して対称か',
-            choices: [r'原点', r'x軸', r'y軸', r'y=x^2+2x-1'],
+            choices: [r'原点', r'x軸', r'y軸', r'y=x'],
             correctAnswerIndex: 4,
           ),
           SmallQuestionItem(
@@ -838,10 +838,10 @@ final questions = <BigQuestionSet>[
             correctAnswerIndex: 2,
           ),
           SmallQuestionItem(
-            id: 43,
-            questionStatement: r"f(x)がx=\alphaで極値をとることはf'(\alpha)=0であるための",
-            choices: [r'必要条件', r'十分条件', r'必要十分条件', r'どちらでもない'],
-            correctAnswerIndex: 2,
+            id: 33,
+            questionStatement: r'A,Bの少なくとも一方が男子であるときAが男子である確率は?',
+            choices: [r'\frac{1}2', r'\frac{1}3', r'\frac{1}4', r'\frac{2}3'],
+            correctAnswerIndex: 4,
           ),
         ],
       ),
@@ -917,7 +917,7 @@ final questions = <BigQuestionSet>[
         questions: [
           SmallQuestionItem(
             id: 51,
-            questionStatement: r'x^{2}+\sqrt{3x}+y^2=1が表す図形はどれか',
+            questionStatement: r'x^{2}+\sqrt{3}x+y^2=1が表す図形はどれか',
             choices: [r'放物線', r'円', r'楕円', r'双曲線'],
             correctAnswerIndex: 2,
           ),
@@ -964,7 +964,7 @@ final questions = <BigQuestionSet>[
           ),
           SmallQuestionItem(
             id: 69,
-            questionStatement: r'床に静止してる物体が受ける重力の反作用として正しいものは?',
+            questionStatement: r'床に静止している物体が受ける重力の反作用として正しいものは?',
             choices: [r'垂直抗力', r'摩擦力', r'物体が床を押す力', r'それ以外'],
             correctAnswerIndex: 4,
           ),
@@ -1018,8 +1018,8 @@ final questions = <BigQuestionSet>[
           ),
           SmallQuestionItem(
             id: 68,
-            questionStatement: r'水面を伝わる波は横波か、縦波か?',
-            choices: [r'横波 ', r'縦波', r'横波であり縦波', r'どちらでもない'],
+            questionStatement: r'水面を伝わる波はどのような波か?',
+            choices: [r'横波 ', r'縦波', r'定常波', r'どちらでもない'],
             correctAnswerIndex: 4,
           ),
         ],
@@ -1116,9 +1116,9 @@ final questions = <BigQuestionSet>[
         questions: [
           SmallQuestionItem(
             id: 72,
-            questionStatement: r'ある剛体の重心に働く力のモーメントの総和が0の時、剛体は',
+            questionStatement: r'ある剛体の任意の点に働く力のモーメントの総和が0の時、剛体は',
             choices: [r'回転しない', r'平行移動しない', r'静止する', r'回転も移動もする'],
-            correctAnswerIndex: 4,
+            correctAnswerIndex: 1,
           ),
           SmallQuestionItem(
             id: 76,
@@ -1153,12 +1153,7 @@ final questions = <BigQuestionSet>[
           SmallQuestionItem(
             id: 79,
             questionStatement: r'一様な磁場中で等速円運動を行う電子の回転周期は?',
-            choices: [
-              r'\frac{2\pi m}{eB}',
-              r'\frac{2\pi mv}{eB}',
-              r'\frac{2\pi m}{vB}',
-              r'\frac{2\pi m}{evB}'
-            ],
+            choices: [r'速さ', r'磁束密度', r'質量', r'電子の電気量'],
             correctAnswerIndex: 1,
           ),
         ],
@@ -1217,8 +1212,8 @@ final questions = <BigQuestionSet>[
           ),
           SmallQuestionItem(
             id: 86,
-            questionStatement: r'水100mLにNaCl0.10molを溶かした溶液のモル濃度は?',
-            choices: [r'0.10mol/L', r'1.0mol/L', r'2.0mol/L', r'分からない'],
+            questionStatement: r'NaClを0.25molを溶かして100mlとした水溶液のモル濃度は?',
+            choices: [r'0.10mol/L', r'1.0mol/L', r'2.0mol/L', r'2.5mol/L'],
             correctAnswerIndex: 4,
           ),
         ],
@@ -1308,7 +1303,7 @@ final questions = <BigQuestionSet>[
         questions: [
           SmallQuestionItem(
             id: 90,
-            questionStatement: r'次の粒子間に働く力のうち3番目に力が強いのは?',
+            questionStatement: r'次の粒子間に働く力のうち一般に3番目に力が強いのは?',
             choices: [r'水素結合', r'金属結合', r'共有結合', r'ファンデルワールス力'],
             correctAnswerIndex: 1,
           ),
