@@ -882,7 +882,7 @@ final questions = <BigQuestionSet>[
         questions: [
           SmallQuestionItem(
             id: 54,
-            questionStatement: r'\int{\frac{1}{\cos^x}} \mathrm{d}xを求めよ。',
+            questionStatement: r'\int{\frac{1}{\cos^{2}x}} \mathrm{d}xを求めよ。',
             choices: [
               r'\frac{1}{\tan{x}}',
               r'-\frac{1}{\tan{x}}',

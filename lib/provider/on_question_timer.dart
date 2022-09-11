@@ -16,11 +16,11 @@ final onQuestionTimerProvdier = StreamProvider.autoDispose(
 // TODO(YumNumm): パラメータの調節
 enum OnQuestionTimerState {
   wait1(0, '開始待機中...'),
-  question1(20000, '小問1'),
-  wait2(2500, '小問2待機'),
-  question2(20000, '小問2'),
-  wait3(2500, '小問3待機'),
-  question3(20000, '小問3'),
+  question1(17500, '小問1'),
+  wait2(5000, '小問2待機'),
+  question2(17500, '小問2'),
+  wait3(5000, '小問3待機'),
+  question3(17500, '小問3'),
   end(0, '次に進んでください');
 
   const OnQuestionTimerState(this.duration, this.title);
